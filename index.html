@@ -4,8 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+    <nav
+      class="p-3 flex bg-white justify-between items-center fixed top-0 left-0 right-0 z-20 shadow-md"
+    >
+      <a class="branding flex items-center flex-1 gap-2">
+        <img
+          src="./assets/asset 0.png"
+          class="max-w-12 maxh-h-12 object-cover"
+          alt=""
+        />
+        <span class="font-poppins font-medium text-lg">ToDesktop</span>
+      </a>
+      <div id="menu" class="hidden lg:flex gap-12">
+        <a href="#" class="font-inter font-medium hover:text-primary"
+          >Pricing</a
+        >
+        <a href="#" class="font-inter font-medium hover:text-primary">Docs</a>
+        <a href="#" class="font-inter font-medium hover:text-primary"
+          >Changelog</a
+        >
+        <a href="#" class="font-inter font-medium hover:text-primary">Blogs</a>
+        <a href="#" class="font-inter font-medium hover:text-primary">Login</a>
+      </div>
+      <div class="hidden lg:flex flex-1 justify-end">
+        <button
+          class="flex justify-center items-center gap-2 border border-gray-400 hover:border-gray-600 rounded-lg px-6 py-2"
+        >
+          <img src="./assets/asset 1.svg" alt="" />
+          <span class="font-poppins font-medium">Electron Developers</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </nav>
   </body>
 </html>
